@@ -23,11 +23,8 @@ class RedfishCollector:
         
         # MongoDB configuration with type conversion
         self.mongo_uri = str(os.getenv("MONGO_URI"))
-        print(f"Mongo URI: {self.mongo_uri}")
         self.mongo_db = str(os.getenv("MONGO_DB"))
-        print(f"Mongo URI: {self.mongo_db}")
         self.mongo_collection = str(os.getenv("MONGO_COLLECTION"))
-        print(f"Mongo URI: {self.mongo_collection}")
         
         # Hardcoded API endpoints
         self.api_endpoints = [
